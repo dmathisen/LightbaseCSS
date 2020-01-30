@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>lightbase-css - a lightweight responsive CSS grid template</title>
+        <meta name="description" content="lightbase-css is a lightweight percent-based responsive css template to be used as a css grid bootstrap for developers.">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/main.css">
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=303928503059391";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+        <header class="site-header" role="banner">
+            <h1 class="ir">lightbase-css</h1>
+        </header>
+
+        <div class="wrapper">            
+            <div class="row main">
+                <div class="col-golden-large">
+                    <article>
+                        <hgroup>
+                            <h1>Lightweight %-based Responsive CSS Template</h1>
+                            <p>This template is created to provide a CSS structure for a <strong><em>very lightweight*</em> <span class="large">%</span>-based responsive website</strong>. It was created with <strong>simplicity and minimalism</strong> in mind so that it can act as a plug-n-play template for designers and developers.</p>
+                            <p>*Compare Bootstrap's CSS/JS size of <strong>~175KB</strong> to lightbase's <strong>~16KB</strong>.</p>
+                        </hgroup>
+                        
+                        <section>
+                            <h2>Another CSS Framework? Why use it?</h2>
+                            <p><strong>4 reasons:</strong></p>
+                            <div class="row why">
+                                <div class="col-1-4">
+                                    <h3>1 - Simplicity</h3>
+                                    <p>It's extremely lightweight &amp; simple to use. Simply create a parent <code>&lt;div class=&quot;row&quot;&gt;</code> and give the children divs a class of <code>col-x-x</code> and you're good to go.</p>
+                                </div>
+                                <div class="col-1-4">
+                                    <h3>2 - Size</h3>
+                                    <p>Lightbase-css is TINY - with a total size of only about <strong>16KB</strong>! There is <strong>no extra bloat</strong>, <strong>no extra styling</strong> and <em>almost</em> <strong>no JS</strong>*. This makes it a great bare-bones template for designers / developers.</p>
+                                </div>
+                                <div class="col-1-4">
+                                    <h3>3 - Responsiveness</h3>
+                                    <p>As viewport size adjusts and columns shrink, they hit certain thresholds and split to 2 or 3 rows so that content is never &quot;crushed&quot;. Resize the browser and try it out.</p>
+                                </div>
+                                <div class="col-1-4">
+                                    <h3>4 - Browser Support</h3>
+                                    <p>It supports IE7 &amp; IE8... something I haven't seen in any other CSS template or framework and it sucks becuase my current client requires IE7 support :/</p>
+                                </div>
+                            </div>
+                            <p>There are plenty of CSS templates and frameworks out there and they all have their strong and weak points. This one is different because it's been created to be <strong>as simple and lightweight</strong> as possible.</p>
+                            <p class="note">*I use HTML5shiv and Respond.js to make this work in IE8 and below.</p>
+                        </section>
+                        
+                        <section>
+                            <h2>Structure</h2>
+                            <p>To create four 25% columns, simply create 4 divs with <code>class=&quot;col-1-4&quot;</code>. For 75% and 25% columns, create 2 divs with <code>class=&quot;col-3-4&quot;</code> and <code>class=&quot;col-1-4&quot;</code>. Make sense?</p>
+                            <p>All grids must have a parent div with <code>class=&quot;row&quot;</code>.</p>
+                            <div class="code-example">
+                                <h4>Standard example</h4>
+                                <code>
+<pre>
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-1-3&quot;&gt;col 1&lt;/div&gt;
+    &lt;div class=&quot;col-1-3&quot;&gt;col 2&lt;/div&gt;
+    &lt;div class=&quot;col-1-3&quot;&gt;col 3&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                </code>
+                                
+                                <h4>Nesting example</h4>
+                                <code>
+<pre>
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-2-3&quot;&gt;
+        col 1
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-1-2&quot;&gt;col 1-1&lt;/div&gt;
+            &lt;div class=&quot;col-1-2&quot;&gt;col 1-2&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-1-3&quot;&gt;
+        col 2
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                </code>
+                            </div>
+                        </section>
+                        
+                        <!-- THE GRID -->
+                        <section class="grid-example">
+                            <h2>Grid Example</h2>
+                            <div class="row">
+                                <div class="col-1-2">
+                                    <p>.col-1-2</p>
+                                </div>
+                                <div class="col-1-2">
+                                    <p>.col-1-2</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-1-3">
+                                    <p>.col-1-3</p>
+                                </div>
+                                <div class="col-1-3">
+                                    <p>.col-1-3</p>
+                                </div>
+                                <div class="col-1-3">
+                                    <p>.col-1-3</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-1-4">
+                                    <p>.col-1-4</p>
+                                </div>
+                                <div class="col-1-4">
+                                    <p>.col-1-4</p>
+                                </div>
+                                <div class="col-1-4">
+                                    <p>.col-1-4</p>
+                                </div>
+                                <div class="col-1-4">
+                                    <p>.col-1-4</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-1-5">
+                                    <p>.col-1-5</p>
+                                </div>
+                                <div class="col-1-5">
+                                    <p>.col-1-5</p>
+                                </div>
+                                <div class="col-1-5">
+                                    <p>.col-1-5</p>
+                                </div>
+                                <div class="col-1-5">
+                                    <p>.col-1-5</p>
+                                </div>
+                                <div class="col-1-5">
+                                    <p>.col-1-5</p>
+                                </div>
+                            </div>
+                                
+                            <div class="row">
+                                <div class="col-1-8">
+                                    <p>.col-1-8</p>
+                                </div>
+                                <div class="col-1-8">
+                                    <p>.col-1-8</p>
+                                </div>
+                                <div class="col-1-8">
+                                    <p>.col-1-8</p>
+                                </div>
+                                <div class="col-1-8">
+                                    <p>.col-1-8</p>
+                                </div>
+                                <div class="col-1-8">
+                                    <p>.col-1-8</p>
+                                </div>
+                                <div class="col-1-8">
+                                    <p>.col-1-8</p>
+                                </div>
+                                <div class="col-1-8">
+                                    <p>.col-1-8</p>
+                                </div>
+                                <div class="col-1-8">
+                                    <p>.col-1-8</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-3-4">
+                                    <p>.col-3-4</p>
+                                </div>
+                                <div class="col-1-4">
+                                    <p>.col-1-4</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-2-3">
+                                    <p>.col-2-3</p>
+                                </div>
+                                <div class="col-1-3">
+                                    <p>.col-1-3</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-golden-large">
+                                    .col-golden-large (golden ratio - 62%)
+                                </div>
+                                <div class="col-golden-small">
+                                    .col-golden-small (golden ratio - 38%)
+                                </div>
+                            </div>
+                            
+                            <div class="row new-section">
+                                <div class="col-2-3">
+                                    nesting - column 1 (66%)
+                                    <div class="row">
+                                        <div class="col-1-2">
+                                            column 1-1 (50%)
+                                        </div>
+                                        <div class="col-1-2">
+                                            column 1-2 (50%)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1-3">
+                                    column 2 (33%)
+                                </div>
+                            </div>
+                        </section><!-- .grid-example -->
+                        
+                        <section class="image-example">
+                            <h2>Image Example</h2>
+                            <div class="row">
+                                <div class="col-1-4">
+                                    <img src="img/image.png" alt="responsive image">
+                                </div>
+                                <div class="col-1-4">
+                                    <img src="img/image.png" alt="responsive image">
+                                </div>
+                                <div class="col-1-4">
+                                    <img src="img/image.png" alt="responsive image">
+                                </div>
+                                <div class="col-1-4">
+                                    <img src="img/image.png" alt="responsive image">
+                                </div>
+                            </div>
+                        </section><!-- .image-example -->
+                        
+                        <section>
+                            <h2>Recommended Use</h2>
+                            <p>My suggestion is to first <a href="download/lightbase-css.zip">download lightbase-css</a>, then...</p>
+                            <ol>
+                                <li>Go to <a href="http://www.initializr.com/" target="_blank">initializr.com</a> and choose <em>'Classic H5BP'</em></li>
+                                <li>Make sure to choose &quot;Modernizr&quot; or &quot;Just HTML5shiv&quot; <strong>AND check &quot;Respond&quot;</strong></li>
+                                <li>Choose whatever options you'd like and download</li>
+                                <li>Open up your initializr download and in <em>index.html</em>, remove <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/normalize.min.css&quot;&gt;</code></li>
+                                <li>Replace <code>/css/main.css</code> with your <em>lightbase main.css</em> </li>
+                                <li>Now you can use the lightbase <em>index.html</em> as a guide for how the grid system works</li>
+                            </ol>
+                            <p>This will allow you to choose several options via initializr and it will make sure you have the latest jQuery/modernizr/html5shiv/etc.</p>
+                            <p class="note">Note that <strong>jQuery is not required</strong> for lightbase-css to work. You can remove it from your index.html file if you don't plan on using it.</p>
+                        </section>
+                        
+                        <section>
+                            <h2>Credit</h2>
+                            <p>Most concepts applied on here are borrowed ideas from other brilliant people...</p>
+                            <p>The <code>class=&quot;col-x-x&quot;</code> structure is a modified idea created by Chris Coyier (<a href="http://css-tricks.com/dont-overthink-it-grids/" target="_blank">Don't Overthink It Grids</a>). Modifications to his idea include adding support for IE7 and allowing for column margins.</p>
+                            <p>I'm using a <em>slightly</em> modified version of Nicolas Gallagher and Johnathan Neal's <a href="https://github.com/necolas/normalize.css" target="_blank">Normalize.css</a> and several concepts are borrowed from <a href="http://html5boilerplate.com/" target="_blank">HTML5 Boilerplate</a> and Jonathan Verrecchia's Responsive <a href="http://www.initializr.com/" target="_blank">Initializr</a>.</p>
+                            <p>Please don't sue me.</p>
+                        </section>
+                        
+                        <section>
+                            <h2>Browser Support</h2>
+                            <p><img src="img/sprite-browsers.png" alt="Browser Support - Chrome, Firefox, Opera, Safari, IE7 and up"></p>
+                            <p>The grid supports IE7 and up; and that includes all modern browsers (obviously). IE7 support is provided using <a href="https://github.com/scottjehl/Respond" target="_blank">respond.js</a>, <a href="http://code.google.com/p/html5shiv/" target="_blank">html5shiv</a> and some crazy css conditionals that I created. It's not 100% perfect in IE7, it's pretty close and getting there was a pain in the ass, so deal with it :)</p>
+                        </section>
+                        
+                        <section>
+                            <h2>Notes</h2>
+                            <p>Make sure that HTML5shiv and Respond.js are up to date! If you didn't start with initializr, visit the respond.js and html5shiv sites (links above) and update the code in <code>/js/vendor/html5-x.x-respond-x.x.x.min.js</code>.</p>
+                        </section>
+                        
+                        <section>
+                            <h2>Changelog</h2>
+                            <p><strong>01/28/2013</strong></p>
+                            <ul class="changelog">
+                                <li>Changed <code>div[class*=&quot;col-&quot;] { }</code> to <code>*[class*=&quot;col-&quot;] { }</code> allowing columns to be applied to any element</li>
+                                <li>Added <code>clear: left;</code> to 2nd and 3rd row on smaller screens</li>
+                                <li>Added Golden Ratio columns</li>
+                                <li>Added image example and <code>max-width: 100%;</code> on images</li>
+                            </ul>
+                        </section>
+                        
+                        <section>
+                            <h2>Feedback</h2>
+                            <script type="text/javascript">
+                              <!--
+                              var part1 = "dan";
+                              var part2 = "danmathisen.com";
+                              document.write('<p>Please send any feedback to <a href="mai' + 'lto:' + part1 + '@' + part2 + '">');
+                              document.write(part1 + '@' + part2 + '</a> or find me on Twitter <a href="https://twitter.com/dmathisen36" target="_blank">@dmathisen36</a>.</p>');
+                              // -->
+                            </script>
+                            <noscript>
+                              <p><em>[please enable javascript]</em></p>
+                            </noscript>
+                        </section>
+                    </article>
+                    
+                </div><!-- .col-golden-large -->
+                
+                <div class="col-golden-small">
+                    <aside>
+                        <h3>Golden Ratio</h3>
+                        <p>This is an aside with <code>class=&quot;col-golden-small&quot;</code>. The stuff over there &#8592; has <code>class=&quot;col-golden-large&quot;</code>.</p>
+                        <p>They are as close to the golden ratio (62% / 38%) as possible.</p>
+                        
+                        <h3>Share</h3>
+                        <div class="fb-like" data-href="http://danmathisen.com/lightbase-css/" data-send="true" data-width="450" data-show-faces="false" data-font="arial"></div>
+                        <a href="https://twitter.com/dmathisen36" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @dmathisen36</a>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        
+                        <h2 class="new-section">Download</h2>
+                        <a href="download/lightbase-css.zip" class="button">lightbase-css.zip (~40KB)</a>
+                    </aside>
+                </div><!-- .col-golden-small -->
+                
+            </div><!-- .row.main -->
+        </div> <!-- .wrapper -->
+
+        <footer class="row site-footer new-section">
+            <div class="col-1-1">
+                <h3>lightbase-css</h3>
+                <p class="note">Created by <a href="http://danmathisen.com/">Dan Mathisen</a></p>
+            </div>
+        </footer>
+        
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        
+        <script>
+            var _gaq=[['_setAccount','UA-28810928-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
